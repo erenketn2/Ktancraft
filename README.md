@@ -98,9 +98,17 @@ Notlar:
 - App ikonu yok: derleme sırasında uyarı verir, durdurmaz. App Store'a yüklemek istersen
   Playgrounds'ta *App Settings → Custom* ile bir ikon seçmen gerekir.
 
-Bu ortamda macOS/Xcode olmadığı için `.ipa`'nın kendisi burada üretilemedi; üretilen ve
-burada doğrulanan şey **proje + iş akışı**dır. Derleme, iş akışı çalıştığında GitHub'ın
-macOS makinesinde olur.
+### Bu depoda gerçekleşen derleme
+
+`main` dalına yapılan push, iş akışını çalıştırdı ve derleme **geçti**: 33 saniyede
+`Ktancraft-unsigned.ipa` üretildi ve artifact olarak yüklendi. Üretilen dosyanın denetimi:
+
+- `Payload/Ktancraft.app/Ktancraft` → **Mach-O 64-bit arm64 executable**, 1.05 MB
+- `CFBundleIdentifier: dev.ktanlabs.ktancraft`, `MinimumOSVersion: 16.0`, yalnız yatay
+- `_CodeSignature` yok — dosya **imzasız**, imzalamayı sideload aracın yapar
+- Toplam uygulama boyutu: 1.1 MB
+
+Yeniden üretmek için: **Actions → Build unsigned IPA → Run workflow**.
 
 ## Doğrulama
 
