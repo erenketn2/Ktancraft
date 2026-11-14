@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02457E03120E38A34B453EA6 /* GameSurfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72D6B539CD09F52A8AD27DA /* GameSurfaceView.swift */; };
+		1062581390CD926A694E94EC /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB5E17E552B930D827FC664 /* Inventory.swift */; };
+		3FE34436A665371CBFFE37DC /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35134D5EB22E9BFED86BFB41 /* MenuView.swift */; };
+		5BC038853D9D717A076B3FC4 /* WorldGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DEAF48C4107AE56E80862A /* WorldGen.swift */; };
+		5F094FFEED76DD7276AA0F46 /* Physics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5317A7CEDEBFD9A72CA708 /* Physics.swift */; };
+		606D49FCE5836F58017B9CFF /* Raycast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA449AAB7845D258F3DEE3C /* Raycast.swift */; };
+		6C35040C495ACA2EC8860AF1 /* WorldRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A9CE2E5099E7791254FABE /* WorldRenderer.swift */; };
+		833EB213C6697F1FE04395D7 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181ECE0916F25B21C2D3C5CC /* World.swift */; };
+		8EEDFD85157E67D1B5E3AFAD /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14308933CBFE35447616892 /* Game.swift */; };
+		9D0F5178C08A9ACD56A21C88 /* Textures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEFA89EDA32AFD8B2CE7CE8 /* Textures.swift */; };
+		9EF2EFA55ED55E02F69E961B /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA78E1BB70CFE4C5B45152EF /* Block.swift */; };
+		A13E39E412C5A2744BC1FBA6 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22D813F31F6422023CB7B2 /* GameModel.swift */; };
+		AA1BF2227B866260308541E0 /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E25B95ED998B6174C6D2EB1 /* HUDView.swift */; };
+		AB0D4273B8460A098FD14C2F /* Chunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01FC71ACF086022EE5BAFCA /* Chunk.swift */; };
+		AEEA8C64A4699D7E31243C5B /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60307FD0E8A4F6C36ED45280 /* GameView.swift */; };
+		C0894689B83A87EEC55E3362 /* Mesher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170691274D4247A45ED7697 /* Mesher.swift */; };
+		C6E87B8E004C6082F70DF3CB /* BlockIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9DDC47BF6A6C9D23B1E1AE /* BlockIcon.swift */; };
+		C7437766E4BC0ED8B59F4854 /* Noise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78BE8F1188AAD156AC01C7E /* Noise.swift */; };
+		C8E8A339694612BBE3B4CC13 /* KtancraftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9CF49A29AFB7DB5C96C82A /* KtancraftApp.swift */; };
+		CA9F5EA087B008742FE57C96 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33A8A48DA1D9247D6D85D3 /* Math.swift */; };
+		D6830BA885225DE4F3C5DC8E /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454D51F98685A1BE5478CD77 /* AppState.swift */; };
+		F313D5F625ADC0F7B412FD3F /* SaveFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857337125384724117F23280 /* SaveFile.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		181ECE0916F25B21C2D3C5CC /* World.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		29A79A0EF52E0FE178B66775 /* Ktancraft.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Ktancraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A9CF49A29AFB7DB5C96C82A /* KtancraftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KtancraftApp.swift; sourceTree = "<group>"; };
+		35134D5EB22E9BFED86BFB41 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		454D51F98685A1BE5478CD77 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		4DB5E17E552B930D827FC664 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		4E25B95ED998B6174C6D2EB1 /* HUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
+		5BEFA89EDA32AFD8B2CE7CE8 /* Textures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textures.swift; sourceTree = "<group>"; };
+		60307FD0E8A4F6C36ED45280 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		6CA449AAB7845D258F3DEE3C /* Raycast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raycast.swift; sourceTree = "<group>"; };
+		77DEAF48C4107AE56E80862A /* WorldGen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldGen.swift; sourceTree = "<group>"; };
+		8170691274D4247A45ED7697 /* Mesher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesher.swift; sourceTree = "<group>"; };
+		857337125384724117F23280 /* SaveFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveFile.swift; sourceTree = "<group>"; };
+		9D22D813F31F6422023CB7B2 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		A4A9CE2E5099E7791254FABE /* WorldRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldRenderer.swift; sourceTree = "<group>"; };
+		AA78E1BB70CFE4C5B45152EF /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		CA5317A7CEDEBFD9A72CA708 /* Physics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physics.swift; sourceTree = "<group>"; };
+		D01FC71ACF086022EE5BAFCA /* Chunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chunk.swift; sourceTree = "<group>"; };
+		D72D6B539CD09F52A8AD27DA /* GameSurfaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSurfaceView.swift; sourceTree = "<group>"; };
+		D78BE8F1188AAD156AC01C7E /* Noise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Noise.swift; sourceTree = "<group>"; };
+		DA9DDC47BF6A6C9D23B1E1AE /* BlockIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockIcon.swift; sourceTree = "<group>"; };
+		E14308933CBFE35447616892 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		EC33A8A48DA1D9247D6D85D3 /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		34FF781EBEA84D69D4EC89C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29A79A0EF52E0FE178B66775 /* Ktancraft.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		576DCE2F2BF282CC738C908D /* Ktancraft.swiftpm */ = {
+			isa = PBXGroup;
+			children = (
+				F20541B57C09FCCB1C12F299 /* App */,
+				DFA43C3719AC0E27AB375E43 /* Core */,
+			);
+			path = Ktancraft.swiftpm;
+			sourceTree = "<group>";
+		};
+		9630B869D2A6FCB08BA1AD7B = {
+			isa = PBXGroup;
+			children = (
+				D0EC8B80D2A4601B2754D2A0 /* c0be727e2d4804a30d8af91d */,
+				34FF781EBEA84D69D4EC89C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0EC8B80D2A4601B2754D2A0 /* c0be727e2d4804a30d8af91d */ = {
+			isa = PBXGroup;
+			children = (
+				576DCE2F2BF282CC738C908D /* Ktancraft.swiftpm */,
+			);
+			name = c0be727e2d4804a30d8af91d;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		DFA43C3719AC0E27AB375E43 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AA78E1BB70CFE4C5B45152EF /* Block.swift */,
+				D01FC71ACF086022EE5BAFCA /* Chunk.swift */,
+				E14308933CBFE35447616892 /* Game.swift */,
+				4DB5E17E552B930D827FC664 /* Inventory.swift */,
+				EC33A8A48DA1D9247D6D85D3 /* Math.swift */,
+				8170691274D4247A45ED7697 /* Mesher.swift */,
+				D78BE8F1188AAD156AC01C7E /* Noise.swift */,
+				CA5317A7CEDEBFD9A72CA708 /* Physics.swift */,
+				6CA449AAB7845D258F3DEE3C /* Raycast.swift */,
+				857337125384724117F23280 /* SaveFile.swift */,
+				5BEFA89EDA32AFD8B2CE7CE8 /* Textures.swift */,
+				181ECE0916F25B21C2D3C5CC /* World.swift */,
+				77DEAF48C4107AE56E80862A /* WorldGen.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F20541B57C09FCCB1C12F299 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				454D51F98685A1BE5478CD77 /* AppState.swift */,
+				DA9DDC47BF6A6C9D23B1E1AE /* BlockIcon.swift */,
+				9D22D813F31F6422023CB7B2 /* GameModel.swift */,
+				D72D6B539CD09F52A8AD27DA /* GameSurfaceView.swift */,
+				60307FD0E8A4F6C36ED45280 /* GameView.swift */,
+				4E25B95ED998B6174C6D2EB1 /* HUDView.swift */,
+				2A9CF49A29AFB7DB5C96C82A /* KtancraftApp.swift */,
+				35134D5EB22E9BFED86BFB41 /* MenuView.swift */,
+				A4A9CE2E5099E7791254FABE /* WorldRenderer.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B3CFEBFCEABBBC0353A85A5 /* Ktancraft */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE303C2EC223E7DDFF4566C6 /* Build configuration list for PBXNativeTarget "Ktancraft" */;
+			buildPhases = (
+				5CC9CD1983BA732640D85BC6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ktancraft;
+			packageProductDependencies = (
+			);
+			productName = Ktancraft;
+			productReference = 29A79A0EF52E0FE178B66775 /* Ktancraft.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0363FE6DB6DB0D845B0BCF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 9C614311E9B5BD02815F1C82 /* Build configuration list for PBXProject "Ktancraft" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9630B869D2A6FCB08BA1AD7B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 34FF781EBEA84D69D4EC89C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B3CFEBFCEABBBC0353A85A5 /* Ktancraft */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CC9CD1983BA732640D85BC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6830BA885225DE4F3C5DC8E /* AppState.swift in Sources */,
+				9EF2EFA55ED55E02F69E961B /* Block.swift in Sources */,
+				C6E87B8E004C6082F70DF3CB /* BlockIcon.swift in Sources */,
+				AB0D4273B8460A098FD14C2F /* Chunk.swift in Sources */,
+				8EEDFD85157E67D1B5E3AFAD /* Game.swift in Sources */,
+				A13E39E412C5A2744BC1FBA6 /* GameModel.swift in Sources */,
+				02457E03120E38A34B453EA6 /* GameSurfaceView.swift in Sources */,
+				AEEA8C64A4699D7E31243C5B /* GameView.swift in Sources */,
+				AA1BF2227B866260308541E0 /* HUDView.swift in Sources */,
+				1062581390CD926A694E94EC /* Inventory.swift in Sources */,
+				C8E8A339694612BBE3B4CC13 /* KtancraftApp.swift in Sources */,
+				CA9F5EA087B008742FE57C96 /* Math.swift in Sources */,
+				3FE34436A665371CBFFE37DC /* MenuView.swift in Sources */,
+				C0894689B83A87EEC55E3362 /* Mesher.swift in Sources */,
+				C7437766E4BC0ED8B59F4854 /* Noise.swift in Sources */,
+				5F094FFEED76DD7276AA0F46 /* Physics.swift in Sources */,
+				606D49FCE5836F58017B9CFF /* Raycast.swift in Sources */,
+				F313D5F625ADC0F7B412FD3F /* SaveFile.swift in Sources */,
+				9D0F5178C08A9ACD56A21C88 /* Textures.swift in Sources */,
+				833EB213C6697F1FE04395D7 /* World.swift in Sources */,
+				5BC038853D9D717A076B3FC4 /* WorldGen.swift in Sources */,
+				6C35040C495ACA2EC8860AF1 /* WorldRenderer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		21A20279B89F6A009039770B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ktanlabs.ktancraft;
+				PRODUCT_NAME = Ktancraft;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63B2B24B7F810B5A788E770E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75BC074AE867EE9D920EB58E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		821A7D60B2B7A626C0445CD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ktanlabs.ktancraft;
+				PRODUCT_NAME = Ktancraft;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C614311E9B5BD02815F1C82 /* Build configuration list for PBXProject "Ktancraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63B2B24B7F810B5A788E770E /* Debug */,
+				75BC074AE867EE9D920EB58E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BE303C2EC223E7DDFF4566C6 /* Build configuration list for PBXNativeTarget "Ktancraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				821A7D60B2B7A626C0445CD2 /* Debug */,
+				21A20279B89F6A009039770B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0363FE6DB6DB0D845B0BCF3 /* Project object */;
+}

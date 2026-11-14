@@ -1,0 +1,54 @@
+# Ktancraft — Xcode project spec (XcodeGen)
+#
+# The iOS app is built from the same sources the Swift Playgrounds project uses,
+# so there is exactly one copy of the code. Run `xcodegen generate` in this
+# directory (or let .github/workflows/ipa.yml do it on a macOS runner) and
+# Ktancraft.xcodeproj appears next to this file.
+
+name: Ktancraft
+
+options:
+  bundleIdPrefix: dev.ktanlabs
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "16.0"
+    TARGETED_DEVICE_FAMILY: "1,2"
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
+    SWIFT_STRICT_CONCURRENCY: minimal
+
+targets:
+  Ktancraft:
+    type: application
+    platform: iOS
+    sources:
+      - path: ../Ktancraft.swiftpm/App
+      - path: ../Ktancraft.swiftpm/Core
+    settings:
+      base:
+        PRODUCT_NAME: Ktancraft
+        PRODUCT_BUNDLE_IDENTIFIER: dev.ktanlabs.ktancraft
+        INFOPLIST_FILE: Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        CODE_SIGN_IDENTITY: ""
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGNING_ALLOWED: NO
+        SUPPORTS_MACCATALYST: NO
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
+        ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: NO
+
+schemes:
+  Ktancraft:
+    build:
+      targets:
+        Ktancraft: all
+    run:
+      config: Release
+    archive:
+      config: Release

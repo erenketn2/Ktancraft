@@ -1,0 +1,17 @@
+# Build output
+.build/
+DerivedData/
+build/
+ios/build/
+Payload/
+*.ipa
+
+# Local archives
+Ktancraft.zip
+
+# Xcode user state
+*.xcuserstate
+xcuserdata/
+
+# macOS
+.DS_Store

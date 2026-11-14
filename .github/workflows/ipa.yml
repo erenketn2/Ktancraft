@@ -1,0 +1,100 @@
+name: Build unsigned IPA
+
+# Produces a real, compiled, UNSIGNED Ktancraft.ipa on a macOS runner, so the
+# .ipa can be made without owning a Mac. Signing is left to whatever sideload
+# tool you use afterwards: the build runs with code signing switched off.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - "Ktancraft.swiftpm/**"
+      - "ios/**"
+      - ".github/workflows/ipa.yml"
+
+jobs:
+  ipa:
+    name: Compile and package
+    runs-on: macos-15
+    timeout-minutes: 25
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Show the toolchain
+        run: |
+          xcodebuild -version
+          xcrun --sdk iphoneos --show-sdk-version
+
+      - name: Use the committed project (generate it if missing)
+        working-directory: ios
+        run: |
+          set -euo pipefail
+          if [ -d Ktancraft.xcodeproj ]; then
+            echo "Using the committed Xcode project"
+          else
+            brew install xcodegen
+            xcodegen generate
+          fi
+
+      - name: Build for device without signing
+        working-directory: ios
+        run: |
+          set -euo pipefail
+          xcodebuild \
+            -project Ktancraft.xcodeproj \
+            -target Ktancraft \
+            -configuration Release \
+            -sdk iphoneos \
+            SYMROOT="$PWD/build" \
+            ARCHS=arm64 \
+            ONLY_ACTIVE_ARCH=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            DEVELOPMENT_TEAM="" \
+            build
+
+      - name: Package Payload into an .ipa
+        working-directory: ios
+        run: |
+          set -euo pipefail
+          APP_PATH=$(find build -name "Ktancraft.app" -type d | head -n 1)
+          if [ -z "$APP_PATH" ]; then
+            echo "Ktancraft.app was not produced"; exit 1
+          fi
+          echo "App bundle: $APP_PATH"
+          rm -rf Payload Ktancraft-unsigned.ipa
+          mkdir -p Payload
+          cp -R "$APP_PATH" Payload/
+          zip -qry Ktancraft-unsigned.ipa Payload
+          ls -lh Ktancraft-unsigned.ipa
+          unzip -l Ktancraft-unsigned.ipa | head -20
+
+      - name: Upload the .ipa
+        uses: actions/upload-artifact@v4
+        with:
+          name: Ktancraft-unsigned-ipa
+          path: ios/Ktancraft-unsigned.ipa
+          if-no-files-found: error
+
+  # Optional: also attach the .ipa to a GitHub Release when a tag is pushed.
+  release:
+    name: Attach to release
+    needs: ipa
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download the artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: Ktancraft-unsigned-ipa
+
+      - name: Attach it to the release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: Ktancraft-unsigned.ipa
